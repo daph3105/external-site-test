@@ -12,6 +12,7 @@ Example code to fire a custom behavioral event
 
 document.getElementById("button1").onclick = function() {_hsq.push(["trackCustomBehavioralEvent", {
     name: "pe20777930_page_1",
+    utk: hubspotutk,
     properties: {
         hs_page_path: "button 1"
     }
