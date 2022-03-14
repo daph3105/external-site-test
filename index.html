@@ -11,55 +11,10 @@
     <form action="https://google.com">
         <input id="button3" type="submit" value="Page 3" />
     </form>
-    <p>
-        Testing Custom Behavioral Events
+
     
        Email of visitor:   
-          <input name="email" type="text" v-model="email"></br>
-      Pick a Dashboard Name:
-      <select name="dashboard_name" v-model="dashboard_name">
-        <option value="Sales Rep Dashboard">Sales Rep Dashboard</option>
-        <option value="Sales Rep Dashboard">Executive Dashboard</option>
-      </select></br>
-      Pick a Software Version
-      <select name="software_version" v-model="software_version">
-        <option value="Enterprise">Enterprise</option>
-        <option value="Professional">Professional</option>
-      </select></br>
-      <button v-on:click="fireCustomBehavioralEvent">
-        Fire event
-      </button>
-    
-      </p>
-      <p>
-      <ul>
-        <li><span style="font-weight:bold">User Email:</span> [[ email ]]</li>
-        <li><span style="font-weight:bold">Dashboard Name:</span> [[ dashboard_name ]]</li>
-        <li><span style="font-weight:bold">Software Version:</span> [[ software_version ]]</li>
-      </ul>
-      </p>
-    <p>
-      Sample JS - that will be fired when you click 'Fire Event'
-      <pre style="border: 1px solid" >
-      _hsq.push([
-            "identify",
-            {
-              email: "[[ email ]]",
-            },
-          ]);
-          _hsq.push([
-            "trackCustomBehavioralEvent",
-            {
-              name: "pe203693_software_usage_event",
-              properties: {
-                software_version: "[[ software_version ]]",
-                dashboard_name: "[[ dashboard_name ]]",
-              },
-            },
-          ])
-      </pre>
-    </p>
-    </div>
+          <input name="email" type="text" id="email">
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20777930.js"></script>
 <!-- End of HubSpot Embed Code -->
