@@ -20,3 +20,6 @@ Example code to fire a custom behavioral event
 //  }])
 //  document.getElementById("button1").style.color = "red";
 // };
+
+var _hsq = window._hsq = window._hsq || [];
+_hsq.push(['setContentType', 'blog-post']);
